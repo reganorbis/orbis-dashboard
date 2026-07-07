@@ -2060,10 +2060,12 @@ function _safeInit(label, fn) {
     }
   }
 }
-_safeInit('renderAcademy', function(){ renderAcademy('Pine Ridge'); });
-_safeInit('filterActions', function(){ filterActions(); });
-_safeInit('buildCharts', function(){ buildRAGSummaryChart(); buildHeatmap(); });
-_safeInit('buildGroupRollup', function(){ buildGroupRollup(); });
+window.addEventListener('load', function() {
+  _safeInit('renderAcademy', function(){ renderAcademy('Pine Ridge'); });
+  _safeInit('filterActions', function(){ filterActions(); });
+  _safeInit('buildCharts', function(){ buildRAGSummaryChart(); buildHeatmap(); });
+  _safeInit('buildGroupRollup', function(){ buildGroupRollup(); });
+});
 </script>
 </body>
 </html>
